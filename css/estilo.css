@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
+}
+.logo{
+    text-align: center;
+}
+.imgLogo{
+    border-radius: 50%;
+    width: 120px;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    color: black;
+    padding: 40px 40px;
+    font-weight: bold;
+}
+h2{
+    font-style: italic;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+h3{
+    font-style: italic;
+    color: black;
+    text-align: left;
+    padding: 10px;
+}
+h4{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(6, 6, 54);
+}
+nav{
+    background-color: rgb(227, 227, 238);
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 100%;
+}
+nav ul li{
+    display: inline;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0 87px;
+}
+.imagenPrincipal{
+    padding: 0px;
+    text-align: center;
+}
+.imagenPrincipal img{
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+.imgInicio1, .imgInicio2{
+    padding: 0px;
+    text-align: center;
+}
+.imgInicio1 img, .imgInicio2 img{
+    padding: 10px;
+    border-radius: 15px;
+    width: 600px;
+}
+.imagenActivismo img, .imagenNosotros img, .imagenCultura img{
+    padding: 10px;
+    width:100%;
+}
+.videoAct{
+    text-align: center;
+}
+.videoAct video{
+    padding: 10px;
+    width: 800px;
+}
+.parrafo1, .parrafo2{
+    padding: 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.contenidoNosotros, .contenidoCultura{
+    width: 100%;
+    overflow: hidden;
+}
+.columnaIzquierda{
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.columnaDerecha{
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer{
+    padding: 20px;
+    background: rgb(227, 227, 238)
+}
