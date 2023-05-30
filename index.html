@@ -1,90 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilo.css">
     <link rel="shortcut icon" href="./img/favicon-32x32.png">
-    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">">
-    <title>La vida en Mattelsa 🤩</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>La vida en Mattelsa</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img class="imgLogo" src="./img/iconoMatt.jpg" alt="Logo Matt">
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./pages/nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./pages/activismo.html">Activismo</a>
-                </li>
-                <li>
-                    <a href="./pages/cultura.html">Cultura</a>
-                </li>
-                <li>
-                    <a href="./pages/trabaja.html">Trabaja aquí</a>
-                </li>
-            </ul>
+    <header class="header">
+        <nav class="navbar">
+          <img class="imgLogo" src="./img/logo-nav-bar.png" alt="Logo Matt">
+          <ul class="navbarList">
+            <li>
+              <a href="./index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <a href="./pages/activismo.html">Activismo</a>
+            </li>
+            <li>
+              <a href="./pages/cultura.html">Cultura</a>
+            </li>
+            <li>
+              <a href="./pages/trabaja.html">Trabaja aquí</a>
+            </li>
+          </ul>
         </nav>
-    </header>
-    <main>
+        <img class="imagenPrincipal" src="./img/banner_home.jpg" alt="Imagen principal">
         <h1>
-            LA VIDA EN MATTELSA
+          LA VIDA EN MATTELSA
         </h1>
-        <section>
-            <section class="imagenPrincipal">
-            <img src="./img/banner_home.jpg" alt="Imagen principal"> 
-        </section>
         <h2>
-            No somos una empresa.
+          No somos una empresa.
         </h2>
-        <section>
-            <div>
-                <h3>
-                    Somos una comunidad dedicada al disfrute y respecto de la vida.
-                </h3>
-                <p class="parrafo1">
-                    Creemos que se puede vivir en equilibrio con la naturaleza, en donde a nadie le falte nada; en el que trabajar sea una chimba y no se trate de cumplir un horario sino de retarse y romper paradigmas, donde logremos más en menos tiempo; y lo que hagamos, lo hagamos con personas con las que queramos pasar toda la vida. Todo esto mientras hacemos la mejor ropa del mundo y dejamos el planeta mejor de cómo lo encontramos.
-                </p>
-            </div>
+      </header>
+    <main class="contenedor">
+        <section class="section1_1">
+            <h3>
+                Somos una comunidad dedicada al disfrute y respecto de la vida.
+            </h3>
+            <p class="parrafo1">
+                Creemos que se puede vivir en equilibrio con la naturaleza, en donde a nadie le falte nada; en el que
+                trabajar sea una chimba y no se trate de cumplir un horario sino de retarse y romper paradigmas, donde
+                logremos más en menos tiempo; y lo que hagamos, lo hagamos con personas con las que queramos pasar toda
+                la vida. Todo esto mientras hacemos la mejor ropa del mundo y dejamos el planeta mejor de cómo lo
+                encontramos.
+            </p>
         </section>
-        <section class="imgInicio1">
-            <img src="./img/imgInicio1.png" alt="Imagen 1 inicio">
+        <section class="section1_2">
+            <img class="imgInicio1" src="./img/imgInicio1.png" alt="Imagen 1 inicio">
         </section>
-        <section>
+        <section class="section2_1">
+            <img class="imgInicio2" src="./img/imgInicio2.png" alt="Imagen 2 inicio">
+        </section>
+        <section class="section2_2">
             <h3>
                 Pero entendemos que no es una vida para todo el mundo
             </h3>
-        </section>
-        <section>
             <p class="parrafo2">
-                Hay que hacer renuncias y adoptar mejores prácticas, para así encontrar la manera de sacar lo mejor de nosotros mismos. De eso se trata nuestra cultura.
+                Hay que hacer renuncias y adoptar mejores prácticas, para así encontrar la manera de sacar lo mejor de
+                nosotros mismos. De eso se trata nuestra cultura.
             </p>
         </section>
-        <section class="imgInicio2">
-            <img src="./img/imgInicio2.png" alt="Imagen 2 inicio">
-        </section>
     </main>
-    <hr>
-    <footer>
-        <h4>
-            ☎ +57 3001234567
-        </h4>
-        <h4>
-            📩 trabaja@mattelsa.net
-        </h4>
-        <h4>
-            <a href="./index.html">Ir a Inicio</a>
-        </h4>
+    <footer class="footer">
+        <div class="enlaces">
+            <h4>
+                © 2023 Mattelsa SAS
+            </h4>
+            <h4>
+                <a href="./index.html">Ir a Inicio</a>
+            </h4>
+        </div>
+        <div class="redes">
+            <a href=""><img class="redes" src="./img/logo-instagram.png" alt="logo instagram"></a>
+            <a href=""><img class="redes" src="./img/logo-facebook.png" alt="logo facebook"></a>
+            <a href=""><img class="redes" src="./img/logo-whatsapp.png" alt="logo whatsapp"></a>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -2,18 +2,77 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #f0f0f0;
-    font-family: 'Montserrat', sans-serif;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
-.logo{
-    text-align: center;
+body {
+  background-color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
 }
-.imgLogo{
-    border-radius: 50%;
-    width: 120px;
-    padding: 20px;
+
+/*---- Header ----*/
+
+.header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
+.navbar {
+  display: grid;
+  grid-template-columns: 41% 59%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.247);
+}
+.imgLogo {
+  width: 50px;
+  display: flex;
+  justify-self: center;
+}
+.navbarList {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  column-gap: 50px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.navbarList li>a {
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  padding-top: 10px;
+  height: 100%;
+}
+.navbarList li>a:hover {
+  border-top: 3px solid white;
+}
+.header h1 {
+  padding: 0;
+  margin-top: 30px;
+  font-family: 'Gotham-Black';
+}
+.imagenPrincipal {
+  padding: 0px;
+  text-align: center;
+}
+.imagenPrincipal img {
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+}
+
 h1{
     text-align: center;
     color: black;
@@ -38,19 +97,6 @@ h4{
 a{
     text-decoration: none;
     color: rgb(6, 6, 54);
-}
-nav{
-    background-color: rgb(227, 227, 238);
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    width: 100%;
-}
-nav ul li{
-    display: inline;
-    text-decoration: none;
-    font-size: 1.3rem;
-    padding: 0 87px;
 }
 .imagenPrincipal{
     padding: 0px;
