@@ -48,59 +48,31 @@
         <section>
             <fieldset>
                 <legend>Formulario de contacto</legend>
-                <form action="">
-                    <div>
-                        <label for="nombre">Escribe tu nombre:</label>
-                        <input type="text" name="nombre" placeholder="Escribe">
+                <p>
+                    Diligencia el siguiente formulario para participar en el proceso de selección de las vacantes que tenemos activos... Sin miedo al éxito!
+                </p>
+                <form class="formularioPers">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Escribe tu nombre:</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text"></div>
                     </div>
-                    <br>
-                    <div>
-                        <label for="apellido">Escribe tu apellido:</label>
-                        <input type="text" name="apellido" placeholder="Escribe">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Escribe tu apellido:</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text"></div>
                     </div>
-                    <br>
-                    <div>
-                        <label for="vacante">Vacante a aplicar:</label>
-                        <input type="text" name="vacante" placeholder="Escribe">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Vacante a aplicar</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Selecciona</div>
                     </div>
-                    <br>
-                    <div>
-                        <label for="email">Email*:</label>
-                        <input type="email" required>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Autorizas a MATTELSA a realizar el tratamiento y manejo de tus datos personales conforme a nuestra Politica de Privacidad</label>
                     </div>
-                    <br>
-                    <div>
-                        <label for="ciudad">Ciudad de residencia:</label>
-                        <select name="ciudad">
-                            <option value="arg">Medellín</option>
-                            <option value="uru">Bogotá</option>
-                            <option value="cl">Barranquilla</option>
-                            <option value="cl">Cali</option>
-                        </select>
-                    </div><br>
-                    <div>
-                        <label for="sexo">Género:
-                            <input type="radio" name="sexo" value="fem">Mujer
-                            <input type="radio" name="sexo" value="hom">Hombre
-                            <input type="radio" name="sexo" value="no_b">No binario
-                        </label>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="fieldset">Sube tu HV</label><br>
-                        <input type="file" name="fieldset">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="condic">Acepta las políticas de tratamiento de datos personales</label>
-                        <input type="checkbox" name="condic">
-                    </div>
-                    <br>
-                    <div>
-                        <input type="submit" value="Enviar Formulario">
-                        <input type="reset" value="Borrar formulario">
-                    </div>
-                </form>
+                    <button type="submit" class="btn btn-danger">Aplicar</button>
+                  </form>
             </fieldset>
         </section>
         <h2>

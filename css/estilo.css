@@ -216,6 +216,11 @@ a {
     margin-bottom: 10px;
 }
 
+.formularioPers {
+    padding: 5%;
+    border: 1px black;
+}
+
 /*---- Footer ----*/
 
 .footer {
