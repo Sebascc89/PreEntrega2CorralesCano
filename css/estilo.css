@@ -139,6 +139,8 @@ body {
     }
 }
 
+/*---- Estilos generales ----*/
+
 h1 {
     text-align: center;
     color: black;
@@ -169,29 +171,7 @@ a {
     color: rgb(6, 6, 54);
 }
 
-.imagenPrincipal {
-    padding: 0px;
-    text-align: center;
-}
-
-.imagenPrincipal img {
-    padding: 10px;
-    border-radius: 20px;
-    width: 100%;
-}
-
-.imgInicio1,
-.imgInicio2 {
-    padding: 0px;
-    text-align: center;
-}
-
-.imgInicio1 img,
-.imgInicio2 img {
-    padding: 10px;
-    border-radius: 15px;
-    width: 600px;
-}
+/*---- Estilos pages ----*/
 
 .imagenActivismo img,
 .imagenNosotros img,
