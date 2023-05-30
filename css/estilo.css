@@ -122,6 +122,22 @@ body {
     font-weight: bold;
 }
 
+/*---- Media query para main responsive de inicio ----*/
+
+@media only screen and (max-width: 600px){
+    .contenedor {
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "section1_1"
+            "section1_2"
+            "section2_2"
+            "section2_1";
+    }
+}
 
 h1 {
     text-align: center;
@@ -265,4 +281,15 @@ a {
     font-weight: bold;
     font-size: 13px;
     margin-top: 15px;
+}
+
+/*---- Media query para footer responsive ----*/
+
+@media only screen and (max-width: 768px){
+    .enlaces {
+        width: 95%;
+    }
+    .copyright {
+        width: 95%;
+    }
 }
