@@ -195,7 +195,6 @@ a{
 .enlaces {
     display: flex;
     flex-direction: row;
-    /* grid-template-columns: repeat(4, 1fr); */
     border-bottom: rgb(207, 207, 207) solid 1px;
     padding-bottom: 10px;
     justify-content: space-between;
