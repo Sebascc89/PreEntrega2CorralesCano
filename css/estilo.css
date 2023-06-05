@@ -23,7 +23,7 @@ body {
 }
 
 .navbarPers li>a:hover {
-    border-top: 3px solid black;
+    border-top: 3px solid white;
 }
 
 li .textoNavbar {
