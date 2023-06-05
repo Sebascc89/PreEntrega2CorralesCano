@@ -29,6 +29,7 @@ body {
 li .textoNavbar {
     color: white !important;
     font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .imagenPrincipal {
@@ -138,15 +139,12 @@ li .textoNavbar {
     flex-direction: row;
 }
 
-.columnaIzqCult, .columnaDerCult {
+.columnaIzqCult,
+.columnaDerCult {
     width: 50%;
 }
 
 /*---- Estilos generales texto----*/
-
-.mainTrabaja {
-    margin-top: 1rem;
-}
 
 h1 {
     text-align: center;
@@ -182,15 +180,18 @@ a {
 
 .imagenActivismo img,
 .imagenNosotros img,
-.imagenCultura img, .imagenTrabaja img {
+.imagenCultura img,
+.imagenTrabaja img {
     width: 100%;
 }
 
-.imagenNosotros {
+.imagenNosotros, .imagenTrabaja {
     width: 100%;
 }
 
-.section1_1Nos img, .section2_1Nos img, .section3_1Nos img {
+.section1_1Nos img,
+.section2_1Nos img,
+.section3_1Nos img {
     width: 100%;
 }
 
@@ -213,6 +214,7 @@ a {
 .contenedorForm {
     margin: 10px;
 }
+
 .formularioPers {
     padding: 5%;
     border: 1px black;
