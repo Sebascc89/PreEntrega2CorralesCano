@@ -16,71 +16,30 @@ body {
 
 /*---- Header ----*/
 
-.header {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.navbar {
-    display: grid;
-    grid-template-columns: 41% 59%;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    padding: 0;
-    margin: 0;
+.header .navbarPers {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.247);
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.247) !important;
 }
 
-.imgLogo {
-    width: 50px;
-    display: flex;
-    justify-self: center;
+.navbarPers li>a:hover {
+    border-top: 3px solid black;
 }
 
-.navbarList {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    column-gap: 50px;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-.navbarList li>a {
-    font-size: 19px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    padding-top: 10px;
-    height: 100%;
-}
-
-.navbarList li>a:hover {
-    border-top: 3px solid white;
-}
-
-.header h1 {
-    padding: 0;
-    margin-top: 30px;
+li .textoNavbar {
+    color: white !important;
     font-weight: bold;
 }
 
 .imagenPrincipal {
     padding: 0px;
     text-align: center;
+    width: 100%;
 }
 
 .imagenPrincipal img {
     padding: 10px;
     border-radius: 20px;
-    width: 100%;
 }
 
 /*---- Main del inicio ----*/
@@ -124,7 +83,7 @@ body {
 
 /*---- Media query para main responsive de inicio ----*/
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .contenedor {
         margin: auto;
         width: 100%;
@@ -139,7 +98,55 @@ body {
     }
 }
 
-/*---- Estilos generales ----*/
+/*---- Main grid para page Nosotros ----*/
+
+.contenedorNosotros {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "section1_1Nos section1_2Nos"
+        "section2_1Nos section2_2Nos"
+        "section3_1Nos section3_2Nos";
+}
+
+/*---- Media query para el main de page Nosotros ----*/
+
+@media only screen and (max-width: 600px) {
+    .contenedorNosotros {
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "section1_1Nos"
+            "section1_2Nos"
+            "section2_1Nos"
+            "section2_2Nos"
+            "section3_1Nos"
+            "section3_2Nos";
+    }
+}
+
+/*---- Main para page Cultura ----*/
+
+.contenidoCultura {
+    display: flex;
+    flex-direction: row;
+}
+
+.columnaIzqCult, .columnaDerCult {
+    width: 50%;
+}
+
+/*---- Estilos generales texto----*/
+
+.mainTrabaja {
+    margin-top: 1rem;
+}
 
 h1 {
     text-align: center;
@@ -171,12 +178,19 @@ a {
     color: rgb(6, 6, 54);
 }
 
-/*---- Estilos pages ----*/
+/*---- Estilos generales pages ----*/
 
 .imagenActivismo img,
 .imagenNosotros img,
-.imagenCultura img {
-    padding: 10px;
+.imagenCultura img, .imagenTrabaja img {
+    width: 100%;
+}
+
+.imagenNosotros {
+    width: 100%;
+}
+
+.section1_1Nos img, .section2_1Nos img, .section3_1Nos img {
     width: 100%;
 }
 
@@ -196,26 +210,9 @@ a {
     text-align: justify;
 }
 
-.contenidoNosotros,
-.contenidoCultura {
-    width: 100%;
-    overflow: hidden;
+.contenedorForm {
+    margin: 10px;
 }
-
-.columnaIzquierda {
-    float: left;
-    width: 50%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.columnaDerecha {
-    float: left;
-    width: 50%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .formularioPers {
     padding: 5%;
     border: 1px black;
@@ -270,10 +267,11 @@ a {
 
 /*---- Media query para footer responsive ----*/
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     .enlaces {
         width: 95%;
     }
+
     .copyright {
         width: 95%;
     }
